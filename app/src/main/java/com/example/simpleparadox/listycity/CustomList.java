@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class CustomList extends ArrayAdapter<City> {
+public class CustomList extends ArrayAdapter<City> { //extends the array adapter, we want to add a city to the custom list
 
     private ArrayList<City> cities;
     private Context context;
@@ -45,6 +45,12 @@ public class CustomList extends ArrayAdapter<City> {
         provinceName.setText(city.getProvinceName());
 
         return view;
+
+    }
+
+
+    public void addCity(City c)
+    {
 
     }
 }
