@@ -48,6 +48,10 @@ public class CustomList extends ArrayAdapter<City> { //extends the array adapter
 
     }
 
+    public int getCount()
+    {
+        return cities.size();
+    }
 
     public void addCity(City c)
     {

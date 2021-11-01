@@ -25,7 +25,7 @@ public class CustomListTest {
     {
         City c = new City("Edmonton", "AB"); //error was there because constructor wasn't public
         int size = list.getCount();
-        list.add(c);
-        assertEquals(size+1, list.getCount());
+        list.addCity(c);
+        assertEquals(1, list.getCount());
     }
 }
